@@ -1,0 +1,177 @@
+@theme {
+  /* Large Title */
+  --text-large-title-l: 2.25rem;
+  --text-large-title-l--line-height: 2.5rem;
+  --text-large-title-l--letter-spacing: 0rem;
+  --text-large-title-l--font-weight: 600;
+
+  --text-large-title-m: 2.25rem;
+  --text-large-title-m--line-height: 2.5rem;
+  --text-large-title-m--letter-spacing: 0rem;
+  --text-large-title-m--font-weight: 500;
+
+  --text-large-title-s: 2.25rem;
+  --text-large-title-s--line-height: 2.5rem;
+  --text-large-title-s--letter-spacing: 0rem;
+  --text-large-title-s--font-weight: 400;
+
+  /* Title-1 */
+  --text-title-l-1: 1.75rem;
+  --text-title-l-1--line-height: 2.125rem;
+  --text-title-l-1--letter-spacing: 0rem;
+  --text-title-l-1--font-weight: 600;
+
+  --text-title-m-1: 1.75rem;
+  --text-title-m-1--line-height: 2.125rem;
+  --text-title-m-1--letter-spacing: 0rem;
+  --text-title-m-1--font-weight: 500;
+
+  --text-title-s-1: 1.75rem;
+  --text-title-s-1--line-height: 2.125rem;
+  --text-title-s-1--letter-spacing: 0rem;
+  --text-title-s-1--font-weight: 400;
+
+  /* Title-2 */
+  --text-title-l-2: 1.375rem;
+  --text-title-l-2--line-height: 1.75rem;
+  --text-title-l-2--letter-spacing: 0rem;
+  --text-title-l-2--font-weight: 600;
+
+  --text-title-m-2: 1.375rem;
+  --text-title-m-2--line-height: 1.75rem;
+  --text-title-m-2--letter-spacing: 0rem;
+  --text-title-m-2--font-weight: 500;
+
+  --text-title-s-2: 1.375rem;
+  --text-title-s-2--line-height: 1.75rem;
+  --text-title-s-2--letter-spacing: 0rem;
+  --text-title-s-2--font-weight: 400;
+
+  /* Title-3 */
+  --text-title-l-3: 1.25rem;
+  --text-title-l-3--line-height: 1.5rem;
+  --text-title-l-3--letter-spacing: 0rem;
+  --text-title-l-3--font-weight: 600;
+
+  --text-title-m-3: 1.25rem;
+  --text-title-m-3--line-height: 1.5rem;
+  --text-title-m-3--letter-spacing: 0rem;
+  --text-title-m-3--font-weight: 500;
+
+  --text-title-s-3: 1.25rem;
+  --text-title-s-3--line-height: 1.5rem;
+  --text-title-s-3--letter-spacing: 0rem;
+  --text-title-s-3--font-weight: 400;
+
+  /* Headline */
+  --text-headline-l: 1.125rem;
+  --text-headline-l--line-height: 1.375rem;
+  --text-headline-l--letter-spacing: 0rem;
+  --text-headline-l--font-weight: 600;
+
+  --text-headline-m: 1.125rem;
+  --text-headline-m--line-height: 1.375rem;
+  --text-headline-m--letter-spacing: 0rem;
+  --text-headline-m--font-weight: 500;
+
+  --text-headline-s: 1.125rem;
+  --text-headline-s--line-height: 1.375rem;
+  --text-headline-s--letter-spacing: 0rem;
+  --text-headline-s--font-weight: 400;
+
+  /* Callout */
+  --text-callout-l: 1rem;
+  --text-callout-l--line-height: 1.25rem;
+  --text-callout-l--letter-spacing: 0rem;
+  --text-callout-l--font-weight: 600;
+
+  --text-callout-m: 1rem;
+  --text-callout-m--line-height: 1.25rem;
+  --text-callout-m--letter-spacing: 0rem;
+  --text-callout-m--font-weight: 500;
+
+  --text-callout-s: 1rem;
+  --text-callout-s--line-height: 1.25rem;
+  --text-callout-s--letter-spacing: 0rem;
+  --text-callout-s--font-weight: 400;
+
+  /* Body */
+  --text-body-l: 1rem;
+  --text-body-l--line-height: 1rem;
+  --text-body-l--letter-spacing: 0rem;
+  --text-body-l--font-weight: 600;
+
+  --text-body-m: 1rem;
+  --text-body-m--line-height: 1rem;
+  --text-body-m--letter-spacing: 0rem;
+  --text-body-m--font-weight: 500;
+
+  --text-body-s: 1rem;
+  --text-body-s--line-height: 1rem;
+  --text-body-s--letter-spacing: 0rem;
+  --text-body-s--font-weight: 400;
+
+  /* Subheadline */
+  --text-subheadline-l: 0.875rem;
+  --text-subheadline-l--line-height: 1.25rem;
+  --text-subheadline-l--letter-spacing: 0rem;
+  --text-subheadline-l--font-weight: 600;
+
+  --text-subheadline-m: 0.875rem;
+  --text-subheadline-m--line-height: 1.25rem;
+  --text-subheadline-m--letter-spacing: 0rem;
+  --text-subheadline-m--font-weight: 500;
+
+  --text-subheadline-s: 0.875rem;
+  --text-subheadline-s--line-height: 1.25rem;
+  --text-subheadline-s--letter-spacing: 0rem;
+  --text-subheadline-s--font-weight: 400;
+
+  /* Footnote */
+  --text-footnote-l: 0.875rem;
+  --text-footnote-l--line-height: 1rem;
+  --text-footnote-l--letter-spacing: 0rem;
+  --text-footnote-l--font-weight: 600;
+
+  --text-footnote-m: 0.875rem;
+  --text-footnote-m--line-height: 1rem;
+  --text-footnote-m--letter-spacing: 0rem;
+  --text-footnote-m--font-weight: 500;
+
+  --text-footnote-s: 0.875rem;
+  --text-footnote-s--line-height: 1rem;
+  --text-footnote-s--letter-spacing: 0rem;
+  --text-footnote-s--font-weight: 400;
+
+  /* Caption-1 */
+  --text-caption-l-1: 0.75rem;
+  --text-caption-l-1--line-height: 0.875rem;
+  --text-caption-l-1--letter-spacing: 0rem;
+  --text-caption-l-1--font-weight: 600;
+
+  --text-caption-m-1: 0.75rem;
+  --text-caption-m-1--line-height: 0.875rem;
+  --text-caption-m-1--letter-spacing: 0rem;
+  --text-caption-m-1--font-weight: 500;
+
+  --text-caption-s-1: 0.75rem;
+  --text-caption-s-1--line-height: 0.875rem;
+  --text-caption-s-1--letter-spacing: 0rem;
+  --text-caption-s-1--font-weight: 400;
+
+  /* Caption-l-2 */
+  --text-caption-l-2: 0.625rem;
+  --text-caption-l-2--line-height: 0.625rem;
+  --text-caption-l-2--letter-spacing: 0rem;
+  --text-caption-l-2--font-weight: 600;
+
+  --text-caption-m-2: 0.625rem;
+  --text-caption-m-2--line-height: 0.625rem;
+  --text-caption-m-2--letter-spacing: 0rem;
+  --text-caption-m-2--font-weight: 500;
+
+  --text-caption-s-2: 0.625rem;
+  --text-caption-s-2--line-height: 0.625rem;
+  --text-caption-s-2--letter-spacing: 0rem;
+  --text-caption-s-2--font-weight: 400;
+}

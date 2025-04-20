@@ -1,5 +1,3 @@
-@import 'tailwindcss';
-
 @theme {
   /* Brand Colors */
   --color-brand-primary-1000: hsla(19, 63%, 11%, 1);

@@ -84,4 +84,38 @@
   --color-base-opacity-300: hsla(38, 15%, 10%, 0.2);
   --color-base-opacity-200: hsla(38, 15%, 10%, 0.1);
   --color-base-opacity-100: hsla(38, 15%, 10%, 0.05);
+
+  /* Spacings */
+  --spacing-space-1: 0.125rem;
+  --spacing-space-2: 0.25rem;
+  --spacing-space-3: 0.375rem;
+  --spacing-space-4: 0.5rem;
+  --spacing-space-5: 0.625rem;
+  --spacing-space-6: 0.75rem;
+  --spacing-space-7: 0.875rem;
+  --spacing-space-8: 1rem;
+  --spacing-space-9: 1.25rem;
+  --spacing-space-10: 1.5rem;
+  --spacing-space-11: 1.75rem;
+  --spacing-space-12: 2rem;
+  --spacing-space-13: 2.25rem;
+  --spacing-space-14: 2.5rem;
+  --spacing-space-15: 2.75rem;
+  --spacing-space-16: 3rem;
+  --spacing-space-17: 3.5rem;
+  --spacing-space-18: 4rem;
+  --spacing-space-19: 5rem;
+  --spacing-space-20: 6rem;
+  --spacing-space-21: 7rem;
+  --spacing-space-22: 8rem;
+  --spacing-space-23: 9rem;
+  --spacing-space-24: 10rem;
+  --spacing-space-25: 12rem;
+  --spacing-space-26: 13rem;
+  --spacing-space-27: 14rem;
+  --spacing-space-28: 15rem;
+  --spacing-space-29: 16rem;
+  --spacing-space-30: 18rem;
+  --spacing-space-31: 20rem;
+  --spacing-space-32: 24rem;
 }

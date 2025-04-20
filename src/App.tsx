@@ -2,7 +2,7 @@ function App() {
   return (
     <>
       <button className="text-brand-primary-400">Click me</button>
-      <button className="bg-brand-primary-1000">test</button>
+      <button className="bg-brand-primary-1000 ml-space-32">test</button>
     </>
   );
 }

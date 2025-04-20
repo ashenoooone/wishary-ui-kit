@@ -32,6 +32,7 @@ export default tseslint.config(
       'react/prop-types': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       'react/jsx-uses-react': 'off',
+      'typescript-eslint/no-explicit-any': 'warn',
     },
   },
 );

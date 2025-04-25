@@ -34,6 +34,8 @@ export type Spacing =
 
 export type TextAlign = 'left' | 'center' | 'right' | 'justify';
 
+export type Rounded = 'l' | 'm' | 's';
+
 export type BaseStylesProps = {
   p?: Spacing;
   pt?: Spacing;
@@ -51,4 +53,5 @@ export type BaseStylesProps = {
   my?: Spacing;
   textAlign?: TextAlign;
   className?: string;
+  rounded?: Rounded;
 };

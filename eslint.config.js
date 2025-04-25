@@ -19,7 +19,7 @@ export default tseslint.config(
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
-      '@typescript-eslint': tseslint.plugin,
+      'typescript-eslint': tseslint.plugin,
       react,
       'react-hooks': reactHooks,
       'jsx-a11y': jsxA11y,

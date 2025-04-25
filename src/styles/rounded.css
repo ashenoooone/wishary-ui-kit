@@ -1,5 +1,6 @@
 @theme {
-  --radius-l: 1rem;
-  --radius-m: 0.75rem;
-  --radius-s: 0.625rem;
+  --radius-l: 16px;
+  --radius-m: 12px;
+  --radius-s: 10px;
+  --radius-full: 999px;
 }

@@ -25,5 +25,11 @@ export const Button = (props: ButtonProps) => {
     ghost: 'text-base-900 border border-base-300',
   }[variant];
 
-  return <Component {...rest} className={cn(variantStyles)} />;
+  const sizeStyles = {
+    small: 'rounded-s',
+    medium: 'rounded-m',
+    large: 'rounded-l',
+  }[size];
+
+  return <Component {...rest} className={cn(variantStyles, sizeStyles, 'px-space-2')} />;
 };

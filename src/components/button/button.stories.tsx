@@ -33,6 +33,15 @@ export const Secondary: Story = {
   },
 };
 
+export const SecondaryDisabled: Story = {
+  args: {
+    children: 'Click me',
+    variant: 'secondary',
+    size: 'medium',
+    disabled: true,
+  },
+};
+
 export const Ghost: Story = {
   args: {
     children: 'Click me',

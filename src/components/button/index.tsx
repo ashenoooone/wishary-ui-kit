@@ -36,7 +36,8 @@ export const Button = (props: ButtonProps) => {
   const interactionStyles = {
     primary:
       'hover:bg-brand-primary-400 active:bg-brand-primary-600 disabled:text-base-300 disabled:bg-base-100',
-    secondary: '',
+    secondary:
+      'hover:bg-base-500 active:text-base-700 active:bg-base-200 disabled:bg-base-100 disabled:text-base-300',
     ghost: '',
   }[variant];
 

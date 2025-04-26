@@ -28,12 +28,15 @@ jobs:
         run: npm run build-storybook
 
       - name: Debug Build Output
-        run: ls -la storybook-static
+        run: ls -la
 
       - name: Deploy to GitHub Pages
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+          # Сохраняем билд во временное место
+          mv storybook-static /tmp/storybook
 
           if git fetch origin gh-pages; then
             git checkout gh-pages
@@ -41,11 +44,11 @@ jobs:
             git checkout --orphan gh-pages
           fi
 
-          find . -mindepth 1 ! -name 'storybook-static' -exec rm -rf {} +
+          # Очищаем всё
+          git rm -rf . || true
 
-          cp -r storybook-static/* .
-
-          rm -rf storybook-static  
+          # Копируем сохранённый билд обратно
+          cp -r /tmp/storybook/* .
 
           git add .
           VERSION=$(node -p "require('./package.json').version")

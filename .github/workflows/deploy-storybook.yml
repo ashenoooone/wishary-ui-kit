@@ -1,0 +1,46 @@
+name: Deploy Storybook to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Storybook
+        run: npm run build-storybook
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+          git fetch origin gh-pages || echo "no gh-pages branch yet"
+          git checkout -B gh-pages  
+
+          rm -rf *  
+          cp -r storybook-static/* . 
+
+          git add .
+
+          VERSION=$(node -p "require('./package.json').version")
+
+          git commit -m "Deploy Storybook v$VERSION to GitHub Pages" || echo "No changes to commit"
+          git push origin gh-pages --force  # Заливаем gh-pages с форсом

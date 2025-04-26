@@ -23,9 +23,12 @@
     "format": "prettier --write .",
     "prepare": "husky",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "storybook build --output-dir ./storybook-static",
     "test": "vitest run",
-    "yalc": "npx yalc publish"
+    "yalc": "npx yalc publish",
+    "bump": "npm version patch -m \"@wishary-ui version updated to v%s\"",
+    "bump:minor": "npm version minor -m \"@wishary-ui version updated to v%s\"",
+    "bump:major": "npm version major -m \"@wishary-ui version updated to v%s\""
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",

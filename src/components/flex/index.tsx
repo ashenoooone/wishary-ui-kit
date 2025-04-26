@@ -9,7 +9,7 @@ type Justify = 'start' | 'center' | 'end' | 'between' | 'around';
 type Gap = Spacing | '0';
 
 type Props = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   direction?: Direction;
   align?: Align;
   justify?: Justify;

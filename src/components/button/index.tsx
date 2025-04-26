@@ -38,7 +38,8 @@ export const Button = (props: ButtonProps) => {
       'hover:bg-brand-primary-400 active:bg-brand-primary-600 disabled:text-base-300 disabled:bg-base-100',
     secondary:
       'hover:bg-base-500 active:text-base-700 active:bg-base-200 disabled:bg-base-100 disabled:text-base-300',
-    ghost: '',
+    ghost:
+      'hover:bg-base-500 hover:text-base-100 hover:border-transparent active:text-base-700 active:bg-base-200 disabled:bg-base-100 disabled:text-base-300',
   }[variant];
 
   const sizeStyles = {

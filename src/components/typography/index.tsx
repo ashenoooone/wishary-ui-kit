@@ -1,6 +1,9 @@
 import { cn } from '@/lib/cn';
+import { convertBaseProps } from '@/lib/convert-base-props';
+import { BaseStylesProps } from '@/lib/types';
 
 type AsElement = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span';
+type Color = 'default' | 'muted';
 export type Variant =
   // Large Title
   | 'large-title-l'
@@ -61,10 +64,11 @@ export type Props = {
   as?: AsElement;
   children: React.ReactNode;
   variant?: Variant;
-};
+  color?: Color;
+} & BaseStylesProps;
 
 export const Typography = (props: Props) => {
-  const { as, variant = 'body-s', ...rest } = props;
+  const { as, variant = 'body-s', color = 'default', ...rest } = props;
 
   const Component = as || 'p';
 
@@ -104,5 +108,12 @@ export const Typography = (props: Props) => {
     'headline-s': 'text-headline-s',
   }[variant];
 
-  return <Component {...rest} className={cn(variantStyles)} />;
+  const colorStyles = {
+    default: '',
+    muted: 'text-base-400',
+  }[color];
+
+  const baseStyles = convertBaseProps(rest);
+
+  return <Component {...rest} className={cn(variantStyles, colorStyles, baseStyles)} />;
 };

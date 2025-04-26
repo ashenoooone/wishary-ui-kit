@@ -35,7 +35,8 @@ jobs:
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
 
-          # Сохраняем билд во временное место
+          VERSION=$(node -p "require('./package.json').version")
+
           mv storybook-static /tmp/storybook
 
           if git fetch origin gh-pages; then
@@ -44,13 +45,11 @@ jobs:
             git checkout --orphan gh-pages
           fi
 
-          # Очищаем всё
+          # Чистим всё
           git rm -rf . || true
 
-          # Копируем сохранённый билд обратно
           cp -r /tmp/storybook/* .
 
           git add .
-          VERSION=$(node -p "require('./package.json').version")
           git commit -m "Deploy Storybook v$VERSION to GitHub Pages" || echo "No changes to commit"
           git push origin gh-pages --force

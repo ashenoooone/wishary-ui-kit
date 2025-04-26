@@ -1,0 +1,53 @@
+@theme {
+  --spacing-button-l-vertical: 14px;
+  --spacing-button-l-horizontal: 24px;
+  --spacing-button-l-horizontal-icon: 20px;
+  --spacing-button-l-icon: 16px;
+
+  --spacing-button-m-vertical: 8px;
+  --spacing-button-m-horizontal: 16px;
+  --spacing-button-m-horizontal-icon: 14px;
+  --spacing-button-m-icon: 10px;
+
+  --spacing-button-s-vertical: 6px;
+  --spacing-button-s-vertical-balance: 8px;
+  --spacing-button-s-horizontal: 12px;
+  --spacing-button-s-horizontal-icon: 10px;
+  --spacing-button-s-icon: 6px;
+
+  --spacing-mini-button-m-vertical: 6px;
+  --spacing-mini-button-m-horizontal: 12px;
+
+  --spacing-space-1: 2px;
+  --spacing-space-2: 4px;
+  --spacing-space-3: 6px;
+  --spacing-space-4: 8px;
+  --spacing-space-5: 10px;
+  --spacing-space-6: 12px;
+  --spacing-space-7: 14px;
+  --spacing-space-8: 16px;
+  --spacing-space-9: 20px;
+  --spacing-space-10: 24px;
+  --spacing-space-11: 28px;
+  --spacing-space-12: 32px;
+  --spacing-space-13: 36px;
+  --spacing-space-14: 40px;
+  --spacing-space-15: 44px;
+  --spacing-space-16: 48px;
+  --spacing-space-17: 56px;
+  --spacing-space-18: 64px;
+  --spacing-space-19: 80px;
+  --spacing-space-20: 96px;
+  --spacing-space-21: 112px;
+  --spacing-space-22: 128px;
+  --spacing-space-23: 144px;
+  --spacing-space-24: 160px;
+  --spacing-space-25: 192px;
+  --spacing-space-26: 208px;
+  --spacing-space-27: 224px;
+  --spacing-space-28: 240px;
+  --spacing-space-29: 256px;
+  --spacing-space-30: 288px;
+  --spacing-space-31: 320px;
+  --spacing-space-32: 384px;
+}

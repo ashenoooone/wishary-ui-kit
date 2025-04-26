@@ -1,0 +1,6 @@
+@theme {
+  --shadow-button-primary:
+    inset 2px 2px 4px 0 #ffffff40, inset -2px -2px 4px 0 #6728161a, inset -2px -2px 0px 0 #6728161a,
+    2px 1px 6px 0 #862c131a, 10px 5px 11px 0 #862c1317, 22px 11px 15px 0 #862c130d,
+    39px 20px 17px 0 #862c1303, 60px 31px 19px 0 #862c1300;
+}

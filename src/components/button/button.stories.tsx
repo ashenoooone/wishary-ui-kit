@@ -13,6 +13,15 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     children: 'Click me',
+    size: 'medium',
+  },
+};
+
+export const DefaultDisabled: Story = {
+  args: {
+    children: 'Click me',
+    disabled: true,
+    size: 'medium',
   },
 };
 
@@ -20,6 +29,7 @@ export const Secondary: Story = {
   args: {
     children: 'Click me',
     variant: 'secondary',
+    size: 'medium',
   },
 };
 
@@ -27,5 +37,8 @@ export const Ghost: Story = {
   args: {
     children: 'Click me',
     variant: 'ghost',
+    size: 'medium',
   },
 };
+
+// TODO: add stories with icons

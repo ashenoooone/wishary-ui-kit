@@ -42,7 +42,7 @@ jobs:
           fi
 
           rm -rf *
-          cp -r storybook-static/* . 
+          cp -r wishary-ui-kit/storybook-static/* .
 
           git add .
           VERSION=$(node -p "require('./package.json').version")

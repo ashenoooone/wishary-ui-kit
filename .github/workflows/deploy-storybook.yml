@@ -41,8 +41,11 @@ jobs:
             git checkout --orphan gh-pages
           fi
 
-          rm -rf *
-          cp -r wishary-ui-kit/storybook-static/* .
+          find . -mindepth 1 ! -name 'storybook-static' -exec rm -rf {} +
+
+          cp -r storybook-static/* .
+
+          rm -rf storybook-static  
 
           git add .
           VERSION=$(node -p "require('./package.json').version")

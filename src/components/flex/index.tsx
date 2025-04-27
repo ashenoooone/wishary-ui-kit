@@ -4,11 +4,11 @@ import { gapClassMap } from '@/lib/convert-base-props/gap';
 import { BaseStylesProps, Spacing } from '@/lib/types';
 
 type Direction = 'row' | 'column';
-type Align = 'start' | 'center' | 'end';
+type Align = 'start' | 'center' | 'end' | 'stretch';
 type Justify = 'start' | 'center' | 'end' | 'between' | 'around';
 type Gap = Spacing | '0';
 
-type Props = {
+export type FlexProps = {
   children?: React.ReactNode;
   direction?: Direction;
   align?: Align;
@@ -16,7 +16,7 @@ type Props = {
   gap?: Gap;
 } & BaseStylesProps;
 
-export const Flex = (props: Props) => {
+export const Flex = (props: FlexProps) => {
   const {
     children,
     direction = 'row',
@@ -39,6 +39,7 @@ export const Flex = (props: Props) => {
           'items-start': align === 'start',
           'items-center': align === 'center',
           'items-end': align === 'end',
+          'items-stretch': align === 'stretch',
           'justify-start': justify === 'start',
           'justify-center': justify === 'center',
           'justify-end': justify === 'end',

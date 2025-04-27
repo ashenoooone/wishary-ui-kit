@@ -4,6 +4,7 @@ import { BaseStylesProps } from '@/lib/types';
 
 type AsElement = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span';
 type Color = 'default' | 'muted' | 'error';
+type LineClamp = 1 | 2 | 3 | 4 | 5 | 6;
 export type Variant =
   // Large Title
   | 'large-title-l'
@@ -58,17 +59,19 @@ export type Variant =
   // Caption 2
   | 'caption-l-2'
   | 'caption-m-2'
-  | 'caption-s-2';
+  | 'caption-s-2'
+  | 'inherit';
 
 export type Props = {
   as?: AsElement;
   children: React.ReactNode;
   variant?: Variant;
   color?: Color;
+  lineClamp?: LineClamp;
 } & BaseStylesProps;
 
 export const Typography = (props: Props) => {
-  const { as, variant = 'body-s', color = 'default', ...rest } = props;
+  const { as, variant = 'inherit', color = 'default', lineClamp, ...rest } = props;
 
   const Component = as || 'p';
 
@@ -106,7 +109,18 @@ export const Typography = (props: Props) => {
     'headline-l': 'text-headline-l',
     'headline-m': 'text-headline-m',
     'headline-s': 'text-headline-s',
+    inherit: '',
   }[variant];
+
+  const lineClampStyles = {
+    0: '',
+    1: 'line-clamp-1',
+    2: 'line-clamp-2',
+    3: 'line-clamp-3',
+    4: 'line-clamp-4',
+    5: 'line-clamp-5',
+    6: 'line-clamp-6',
+  }[lineClamp ?? 0];
 
   const colorStyles = {
     default: '',
@@ -116,5 +130,7 @@ export const Typography = (props: Props) => {
 
   const baseStyles = convertBaseProps(rest);
 
-  return <Component {...rest} className={cn(variantStyles, colorStyles, baseStyles)} />;
+  return (
+    <Component {...rest} className={cn(variantStyles, colorStyles, lineClampStyles, baseStyles)} />
+  );
 };

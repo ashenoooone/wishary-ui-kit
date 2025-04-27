@@ -66,9 +66,10 @@ export const PhotoUploader: React.FC<PhotoUploaderProps> = ({
         'bg-base-200',
         'border-2 border-dashed border-base-300',
         'transition-all relative',
-        'hover:border-base-400 active:border-transparent',
+        'active:border-transparent',
         {
-          'border-brand-secondary-1-500': error,
+          'border-brand-secondary-1-500 hover:border-brand-secondary-1-700': error,
+          'hover:border-base-400': !error,
         },
       )}
     >

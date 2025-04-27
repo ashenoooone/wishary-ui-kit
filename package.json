@@ -26,10 +26,10 @@
     "build-storybook": "storybook build --output-dir ./storybook-static",
     "test": "vitest run",
     "yalc": "npx yalc publish",
-    "bump": "npm run changelog && git add CHANGELOG.md && git commit -m \"docs: update CHANGELOG.md\" && npm version patch -m \"@wishary-ui version updated to v%s\" && git push && git push --tags",
-    "bump:minor": "npm run changelog && git add CHANGELOG.md && git commit -m \"docs: update CHANGELOG.md\" && npm version minor -m \"@wishary-ui version updated to v%s\" && git push && git push --tags",
-    "bump:major": "npm run changelog && git add CHANGELOG.md && git commit -m \"docs: update CHANGELOG.md\" && npm version major -m \"@wishary-ui version updated to v%s\" && git push && git push --tags",
-    "changelog": "auto-changelog -p --ignore-commit-pattern '^docs:'"
+    "changelog": "auto-changelog -p --ignore-commit-pattern '^docs:|^@wishary-ui version updated to v'",
+    "bump": "npm run changelog && git add CHANGELOG.md && git commit -m \"docs: update CHANGELOG.md\" && npm version patch --no-git-tag-version && git tag v$(node -p \"require('./package.json').version\") && git push && git push --tags",
+    "bump:minor": "npm run changelog && git add CHANGELOG.md && git commit -m \"docs: update CHANGELOG.md\" && npm version minor --no-git-tag-version && git tag v$(node -p \"require('./package.json').version\") && git push && git push --tags",
+    "bump:major": "npm run changelog && git add CHANGELOG.md && git commit -m \"docs: update CHANGELOG.md\" && npm version major --no-git-tag-version && git tag v$(node -p \"require('./package.json').version\") && git push && git push --tags"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",

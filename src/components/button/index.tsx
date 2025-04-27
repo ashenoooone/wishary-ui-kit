@@ -43,9 +43,9 @@ export const Button = (props: ButtonProps) => {
   }[variant];
 
   const sizeStyles = {
-    small: 'rounded-size-s px-button-s-horizontal py-button-s-vertical',
-    medium: 'rounded-size-m px-button-m-horizontal py-button-m-vertical',
-    large: 'rounded-size-l px-button-l-horizontal py-button-l-vertical',
+    small: 'text-caption-l-1 rounded-size-s px-button-s-horizontal py-button-s-vertical',
+    medium: 'text-subheadline-l rounded-size-m px-button-m-horizontal py-button-m-vertical',
+    large: 'text-subheadline-l rounded-size-l px-button-l-horizontal py-button-l-vertical',
   }[size];
 
   const baseStyles = convertBaseProps(rest);

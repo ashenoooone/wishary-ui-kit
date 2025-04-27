@@ -3,7 +3,7 @@ import { convertBaseProps } from '@/lib/convert-base-props';
 import { BaseStylesProps } from '@/lib/types';
 
 type AsElement = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span';
-type Color = 'default' | 'muted';
+type Color = 'default' | 'muted' | 'error';
 export type Variant =
   // Large Title
   | 'large-title-l'
@@ -111,6 +111,7 @@ export const Typography = (props: Props) => {
   const colorStyles = {
     default: '',
     muted: 'text-base-400',
+    error: 'text-brand-secondary-1-500',
   }[color];
 
   const baseStyles = convertBaseProps(rest);

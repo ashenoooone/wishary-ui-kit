@@ -33,7 +33,6 @@ export const Flex = (props: Props) => {
     <div
       className={cn(
         'flex',
-        baseStyles,
         {
           'flex-row': direction === 'row',
           'flex-col': direction === 'column',
@@ -47,6 +46,7 @@ export const Flex = (props: Props) => {
           'justify-around': justify === 'around',
         },
         gapClass,
+        baseStyles,
       )}
     >
       {children}

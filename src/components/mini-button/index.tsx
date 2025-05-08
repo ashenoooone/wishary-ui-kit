@@ -22,7 +22,7 @@ export const MiniButton = (props: Props) => {
     small: 'px-mini-button-s-horizontal py-mini-button-s-vertical',
   }[size];
 
-  const defaultStyles = 'rounded-size-full bg-base-200 transition-all';
+  const defaultStyles = 'cursor-pointer rounded-size-full bg-base-200 transition-all';
   const interactionStyles =
     'hover:bg-base-500 hover:text-base-100 hover:border-transparent active:text-base-100 active:bg-base-900 disabled:bg-base-100 disabled:text-base-300';
 

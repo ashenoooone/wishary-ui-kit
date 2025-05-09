@@ -32,18 +32,15 @@
     "changelog": "auto-changelog -p --ignore-commit-pattern '^docs:' -c .auto-changelog.json"
   },
   "dependencies": {
-    "@radix-ui/react-dialog": "^1.1.13",
-    "@tailwindcss/vite": "^4.1.4",
-    "clsx": "^2.1.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwind-merge": "^3.2.0",
-    "tailwindcss": "^4.1.5"
+    "@tailwindcss/vite": "^4.1.4"
   },
   "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0",
     "clsx": "^2.1.1",
     "tailwind-merge": "^3.2.0",
-    "tailwindcss": "^4.1.5"
+    "tailwindcss": "^4.1.5",
+    "@radix-ui/react-dialog": "^1.1.13"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",

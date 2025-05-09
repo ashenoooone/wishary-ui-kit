@@ -4,3 +4,4 @@
 @import './rounded.css';
 @import './shadows.css';
 @import './space.css';
+@plugin 'tailwindcss-animate';

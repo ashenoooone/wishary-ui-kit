@@ -8,13 +8,9 @@
 ![build status](https://github.com/ashenoooone/wishary-ui-kit/actions/workflows/release.yml/badge.svg)
 ![storybook](https://img.shields.io/badge/storybook-online-purple)
 
----
-
 ## 🚀 Демо
 
 📚 [Открыть Storybook](https://ashenoooone.github.io/wishary-ui-kit/)
-
----
 
 ## 📦 Установка
 
@@ -28,15 +24,12 @@ yarn add @wishary/ui-kit
 npm install react react-dom tailwindcss clsx tailwind-merge @radix-ui/react-dialog
 ```
 
----
-
-📚 Документация
+## 📚 Документация
 
 Все компоненты с примерами находятся в Storybook.
 
----
+## 🧩 Технологии
 
-🧩 Технологии
 • React 18+ / 19+
 • Tailwind CSS 4
 • Radix UI
@@ -44,9 +37,7 @@ npm install react react-dom tailwindcss clsx tailwind-merge @radix-ui/react-dial
 • Storybook 8
 • Vitest и Playwright для тестов
 
----
-
-🛠 Разработка
+## 🛠 Разработка
 
 ```bash
 # Запустить локальный Storybook
@@ -60,20 +51,14 @@ npm run lint
 npm run format
 ```
 
----
+## 🤝 Вклад
 
-🤝 Вклад
+Pull requests приветствуются! Ознакомьтесь с [CONTRIBUTING.md](./CONTRIBUTING.md).
 
-Pull requests приветствуются! Ознакомьтесь с CONTRIBUTING.md.
-
----
-
-📄 Лицензия
+## 📄 Лицензия
 
 MIT
 
----
-
-🐛 Обратная связь
+## 🐛 Обратная связь
 
 Проблемы и предложения — через Issues.

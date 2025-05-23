@@ -7,10 +7,11 @@
   "types": "./dist/index.d.ts",
   "homepage": "https://github.com/ashenoooone/wishary-ui-kit",
   "exports": {
+    "./package.json": "./package.json",
+    "./dist/styles": "./dist/styles.css",
     ".": {
-      "require": "./dist/index.cjs",
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/@wishary/ui-kit.es.js",
+      "types": "./dist/@wishary/ui-kit.d.ts"
     }
   },
   "files": [

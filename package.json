@@ -1,6 +1,6 @@
 {
   "name": "@wishary/ui-kit",
-  "version": "0.0.12",
+  "version": "0.0.11",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -11,7 +11,7 @@
     "./dist/styles": "./dist/styles.css",
     ".": {
       "import": "./dist/@wishary/ui-kit.es.js",
-      "types": "./dist/@wishary/ui-kit.d.ts"
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [

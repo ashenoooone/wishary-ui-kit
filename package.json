@@ -5,7 +5,7 @@
   "homepage": "https://github.com/ashenoooone/wishary-ui-kit",
   "exports": {
     "./package.json": "./package.json",
-    "./dist/styles": "./dist/styles.css",
+    "./dist/styles": "./dist/ui-kit.css",
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/@wishary/ui-kit.es.js",

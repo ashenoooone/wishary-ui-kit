@@ -5,6 +5,7 @@ import dts from 'vite-plugin-dts';
 import * as path from 'node:path';
 import autoprefixer from 'autoprefixer';
 import tailwindcss from '@tailwindcss/vite';
+import extractCSSVars from './plugins/extractCSSVars.plugin.js';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -37,6 +38,11 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    extractCSSVars({
+      inputFiles: ['src/styles/main.css'],
+      outputPath: './dist/variables.css',
+      format: 'both',
+    }),
     tailwindcss(),
     dts({
       insertTypesEntry: true,

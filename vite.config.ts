@@ -37,12 +37,12 @@ export default defineConfig({
     },
   },
   plugins: [
-    react(),
     extractCSSVars({
       inputFiles: ['src/styles/main.css'],
       outputPath: './dist/variables.css',
-      format: 'both',
+      format: 'theme',
     }),
+    react(),
     tailwindcss(),
     dts({
       insertTypesEntry: true,
